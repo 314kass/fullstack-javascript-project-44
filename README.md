@@ -1,3 +1,5 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/pikassos/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/pikassos/fullstack-javascript-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/769edc94ab584c4217da/maintainability)](https://codeclimate.com/github/314kass/fullstack-javascript-project-44/maintainability)
+
+https://asciinema.org/a/FG2O6MMzxbI4SzxPigxu4xsoq
