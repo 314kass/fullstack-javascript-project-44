@@ -6,6 +6,6 @@ export default (quest, correct, name) => {
     console.log('Correct! ');
     return 1;
   }
-  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.\nLet's try again, ${name}`);
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.\nLet's try again, ${name}!`);
   return -10;
 };
