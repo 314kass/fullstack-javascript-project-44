@@ -10,13 +10,14 @@ let i = 0;
 while (i < 4) {
   const num = random();
   const plus = random();
-  const quest = [`${num}`];
+  const questArray = [`${num}`];
   for (let j = 1; j < 10; j += 1) {
-    quest.push(`${num + plus * j}`);
+    questArray.push(`${num + plus * j}`);
   }
   const whichNum = Math.floor(random() / 6);
-  const correct = quest[whichNum];
-  quest[whichNum] = '..';
+  const correct = questArray[whichNum];
+  questArray[whichNum] = '..';
+  const quest = questArray.join(' ');
   i += check(quest, correct, name);
   if (i === 3) {
     console.log(`Congratulations, ${name}!`);
