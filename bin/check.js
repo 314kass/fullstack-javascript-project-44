@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 export default (quest, correct, name) => {
-  const answer = readlineSync.question(`Question: ${quest}\n Your answer: `);
+  const answer = readlineSync.question(`Question: ${quest}\nYour answer: `);
   if (answer === correct) {
     console.log('Correct! ');
     return 1;
