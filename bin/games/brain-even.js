@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import helloName from '../hello-name.js';
 import check from '../check.js';
-import random from '../random1-50.js';
+import random from '../random.js';
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 const name = helloName();

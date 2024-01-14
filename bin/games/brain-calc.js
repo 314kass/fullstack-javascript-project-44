@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import helloName from '../hello-name.js';
 import check from '../check.js';
-import random from '../random1-50.js';
+import random from '../random.js';
 
 const name = helloName();
 console.log('What is the result of the expression?');
