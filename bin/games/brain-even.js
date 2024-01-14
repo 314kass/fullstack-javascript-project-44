@@ -16,7 +16,7 @@ while (i < 4) {
   }
   i += check(randomNum, correct, name);
   if (i === 3) {
-    console.log(`Congratulations, ${name}`);
+    console.log(`Congratulations, ${name}!`);
     break;
   }
   if (i < 0) {

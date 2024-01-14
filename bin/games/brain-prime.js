@@ -13,7 +13,7 @@ while (i < 4) {
   const quest = [`${num}`];
   i += check(quest, correct, name);
   if (i === 3) {
-    console.log(`Congratulations, ${name}`);
+    console.log(`Congratulations, ${name}!`);
     break;
   }
   if (i < 0) {

@@ -14,7 +14,7 @@ while (i < 4) {
   const correct = `${gcd(randomNum1, randomNum2)}`;
   i += check(quest, correct, name);
   if (i === 3) {
-    console.log(`Congratulations, ${name}`);
+    console.log(`Congratulations, ${name}!`);
     break;
   }
   if (i < 0) {
