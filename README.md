@@ -5,7 +5,7 @@
 five console brain games
 
 https://asciinema.org/a/FG2O6MMzxbI4SzxPigxu4xsoq brain-even  
-[![asciicast](https://asciinema.org/a/9VEOl8Z9by8WtUHS5gCdyfsLS.svg)](https://asciinema.org/a/9VEOl8Z9by8WtUHS5gCdyfsLS) brain-calc  
+<script async id="asciicast-9VEOl8Z9by8WtUHS5gCdyfsLS" src="https://asciinema.org/a/9VEOl8Z9by8WtUHS5gCdyfsLS.js"></script> brain-calc  
 https://asciinema.org/a/FCUmolgTXnRN1Kum3E0IZz8Tk brain-gcd  
 https://asciinema.org/a/8nPv6ytxz4Pf0TelmzCrtpzyP brain-progression  
 https://asciinema.org/a/C53psriF9HjOjmoQMWFqsFKHI brain-prime
