@@ -1,33 +1,27 @@
 #!/usr/bin/env node
-import helloName from '../hello-name.js';
-import check from '../check.js';
-import random from '../random.js';
+import { getRandomInRange } from '../../src/getRandomInRange.js';
+import engine from '../../src/index.js';
 
-const name = helloName();
-console.log('What is the result of the expression?');
-let i = 0;
-while (i < 4) {
-  const randomNum1 = random();
-  const randomNum2 = random();
-  const makeQuest = random();
-  let quest = '';
-  let correct = '';
-  if (makeQuest < 21) {
-    quest = `${randomNum1} - ${randomNum2}`;
-    correct = `${randomNum1 - randomNum2}`;
-  } else if (makeQuest > 40) {
-    quest = `${randomNum1} * ${randomNum2}`;
-    correct = `${randomNum1 * randomNum2}`;
+
+const gameDescription = 'What is the result of the expression?';
+function roundGen () {
+  const roundGeneration = [];
+  const operator = getRandomInRange(1,3);
+  const firstNum = getRandomInRange();
+  const secondNum = getRandomInRange();
+  if(operator === 1) {
+    roundGeneration.push(`${firstNum} - ${secondNum}`);
+    roundGeneration.push(`${firstNum - secondNum}`);
+  } else if (operator === 2) {
+    roundGeneration.push(`${firstNum} * ${secondNum}`);
+    roundGeneration.push(`${firstNum * secondNum}`);
   } else {
-    quest = `${randomNum1} + ${randomNum2}`;
-    correct = `${randomNum1 + randomNum2}`;
+    roundGeneration.push(`${firstNum} + ${secondNum}`);
+    roundGeneration.push(`${firstNum + secondNum}`);
   }
-  i += check(quest, correct, name);
-  if (i === 3) {
-    console.log(`Congratulations, ${name}!`);
-    break;
-  }
-  if (i < 0) {
-    break;
-  }
+  return roundGeneration;
 }
+
+engine(gameDescription,roundGen);
+
+

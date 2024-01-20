@@ -1,29 +1,23 @@
 #!/usr/bin/env node
-import helloName from '../hello-name.js';
-import check from '../check.js';
-import random from '../random.js';
+import { getRandomInRange } from '../../src/getRandomInRange.js';
+import engine from '../../src/index.js';
 
-const name = helloName();
-console.log('What number is missing in the progression?');
-let i = 0;
-
-while (i < 4) {
-  const num = random();
-  const plus = random();
-  const questArray = [`${num}`];
-  for (let j = 1; j < 10; j += 1) {
-    questArray.push(`${num + plus * j}`);
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+function roundGen () {
+  const randomNum = getRandomInRange();
+  const plus = getRandomInRange();
+  const quest = [];
+  const roundGeneration = [];
+  for (let i = 0; i < 10; i += 1) {
+    quest.push(`${randomNum + (plus * i)}`);
   }
-  const whichNum = Math.floor(random() / 6);
-  const correct = questArray[whichNum];
-  questArray[whichNum] = '..';
-  const quest = questArray.join(' ');
-  i += check(quest, correct, name);
-  if (i === 3) {
-    console.log(`Congratulations, ${name}!`);
-    break;
-  }
-  if (i < 0) {
-    break;
-  }
+  const whichNum = getRandomInRange(1,10);
+  const temp = quest[whichNum];
+  quest[whichNum] = '..';
+  roundGeneration.push(quest.join(' '));
+  roundGeneration.push(temp);
+  
+  return roundGeneration;
 }
+
+engine(gameDescription,roundGen);

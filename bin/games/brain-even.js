@@ -1,25 +1,17 @@
 #!/usr/bin/env node
-import helloName from '../hello-name.js';
-import check from '../check.js';
-import random from '../random.js';
+import { getRandomInRange } from '../../src/getRandomInRange.js';
+import engine from '../../src/index.js';
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-const name = helloName();
-let i = 0;
-while (i < 4) {
-  const randomNum = random();
-  let correct = '';
+const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".'
+function roundGen () {
+  const randomNum = getRandomInRange();
+  const roundGeneration = [randomNum];
   if (randomNum % 2 === 0) {
-    correct = 'yes';
+    roundGeneration.push('yes');
   } else {
-    correct = 'no';
+    roundGeneration.push('no');
   }
-  i += check(randomNum, correct, name);
-  if (i === 3) {
-    console.log(`Congratulations, ${name}!`);
-    break;
-  }
-  if (i < 0) {
-    break;
-  }
+  return roundGeneration;
 }
+
+engine(gameDescription,roundGen);
