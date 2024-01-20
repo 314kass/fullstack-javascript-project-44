@@ -4,9 +4,17 @@
 
 five console brain games
 
-https://asciinema.org/a/FG2O6MMzxbI4SzxPigxu4xsoq brain-even  
-<script async id="asciicast-9VEOl8Z9by8WtUHS5gCdyfsLS" src="https://asciinema.org/a/9VEOl8Z9by8WtUHS5gCdyfsLS.js"></script> brain-calc  
-https://asciinema.org/a/FCUmolgTXnRN1Kum3E0IZz8Tk brain-gcd  
+ 
+
+https://github.com/314kass/fullstack-javascript-project-44/assets/154794660/0d0756ac-dc38-41f5-a900-318211a5fac8
+
+
+https://github.com/314kass/fullstack-javascript-project-44/assets/154794660/28c515f8-83fc-4df1-bda6-7f999cc572f3  
+
+
+https://github.com/314kass/fullstack-javascript-project-44/assets/154794660/76deb69d-6739-42df-8b6e-3ed25df8a786
+
+ 
 https://asciinema.org/a/8nPv6ytxz4Pf0TelmzCrtpzyP brain-progression  
 https://asciinema.org/a/C53psriF9HjOjmoQMWFqsFKHI brain-prime
 
