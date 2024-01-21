@@ -24,5 +24,9 @@ https://github.com/314kass/fullstack-javascript-project-44/assets/154794660/ba21
 
 
 
+installation:
+git clone git@github.com:314kass/fullstack-javascript-project-44.git
+cd fullstack-javascript-project-44
+make
 
-https://asciinema.org/a/8P56qPXOoRjSvbUV2mEhmvGAC install
+
