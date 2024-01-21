@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync';
-import cli from './cli.js';
 
 const maxRound = 3;
 
