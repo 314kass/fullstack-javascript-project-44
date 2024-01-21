@@ -8,7 +8,7 @@ function roundGen() {
   const operator = getRandomInRange(0, 2);
   const firstNum = getRandomInRange();
   const secondNum = getRandomInRange();
-  const operatorChar = ['-','*','+'];
+  const operatorChar = ['-', '*', '+'];
   const results = [`${firstNum - secondNum}`, `${firstNum * secondNum}`, `${firstNum + secondNum}`];
   roundGeneration.push(`${firstNum} ${operatorChar[operator]} ${secondNum}`);
   roundGeneration.push(results[operator]);
