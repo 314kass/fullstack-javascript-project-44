@@ -11,7 +11,7 @@ const isPrime = (num) => {
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 function roundGen() {
-  const randomNum = getRandomInRange();
+  const randomNum = getRandomInRange(2, 100);
   const roundGeneration = [];
   roundGeneration.push(`${randomNum}`);
   roundGeneration.push(`${isPrime(randomNum)}`);
