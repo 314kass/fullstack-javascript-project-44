@@ -11,7 +11,7 @@ function roundGen() {
   for (let i = 0; i < 10; i += 1) {
     quest.push(`${randomNum + (plus * i)}`);
   }
-  const whichNum = getRandomInRange(1, 10);
+  const whichNum = getRandomInRange(0, 9);
   const temp = quest[whichNum];
   quest[whichNum] = '..';
   roundGeneration.push(quest.join(' '));
