@@ -19,6 +19,7 @@ const engine = (gameDescription, roundGeneration) => {
       }
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct asnwer was '${correct}')`);
+      console.log(`Let's try again, ${name}!`);
       break;
     }
   }
