@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import { getRandomInRange } from '../../src/getRandomInRange.js';
+import getRandomInRange from '../../src/getRandomInRange.js';
 import engine from '../../src/index.js';
 
-const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".'
-function roundGen () {
+const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+function roundGen() {
   const randomNum = getRandomInRange();
   const roundGeneration = [randomNum];
   if (randomNum % 2 === 0) {
@@ -14,4 +14,4 @@ function roundGen () {
   return roundGeneration;
 }
 
-engine(gameDescription,roundGen);
+engine(gameDescription, roundGen);

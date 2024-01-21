@@ -1,15 +1,14 @@
 #!/usr/bin/env node
-import { getRandomInRange } from '../../src/getRandomInRange.js';
+import getRandomInRange from '../../src/getRandomInRange.js';
 import engine from '../../src/index.js';
 
-
 const gameDescription = 'What is the result of the expression?';
-function roundGen () {
+function roundGen() {
   const roundGeneration = [];
-  const operator = getRandomInRange(1,3);
+  const operator = getRandomInRange(1, 3);
   const firstNum = getRandomInRange();
   const secondNum = getRandomInRange();
-  if(operator === 1) {
+  if (operator === 1) {
     roundGeneration.push(`${firstNum} - ${secondNum}`);
     roundGeneration.push(`${firstNum - secondNum}`);
   } else if (operator === 2) {
@@ -22,6 +21,4 @@ function roundGen () {
   return roundGeneration;
 }
 
-engine(gameDescription,roundGen);
-
-
+engine(gameDescription, roundGen);
