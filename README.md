@@ -15,7 +15,14 @@ https://github.com/314kass/fullstack-javascript-project-44/assets/154794660/28c5
 https://github.com/314kass/fullstack-javascript-project-44/assets/154794660/76deb69d-6739-42df-8b6e-3ed25df8a786
 
  
-https://asciinema.org/a/8nPv6ytxz4Pf0TelmzCrtpzyP brain-progression  
-https://asciinema.org/a/C53psriF9HjOjmoQMWFqsFKHI brain-prime
+
+https://github.com/314kass/fullstack-javascript-project-44/assets/154794660/92068325-c33a-4f37-951a-3013181c1af1
+
+
+
+https://github.com/314kass/fullstack-javascript-project-44/assets/154794660/ba21258e-c2fe-4da3-9590-dd64f0006698
+
+
+
 
 https://asciinema.org/a/8P56qPXOoRjSvbUV2mEhmvGAC install
