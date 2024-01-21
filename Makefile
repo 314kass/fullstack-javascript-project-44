@@ -1,7 +1,7 @@
 install: #install dependences
 		npm ci
 brain-games: #start brain-games
-		node bin/games/brain-games.js
+		node bin/brain-games.js
 brain-calc: #start brain-calc
 		node bin/games/brain-calc.js
 brain-even: #start brain-even
