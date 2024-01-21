@@ -4,7 +4,9 @@ import cli from './cli.js';
 const maxRound = 3;
 
 const engine = (gameDescription, roundGeneration) => {
-  const name = cli();
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}`);
   console.log(gameDescription);
 
   for (let i = 0; i < maxRound; i += 1) {
