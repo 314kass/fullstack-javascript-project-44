@@ -2,22 +2,22 @@
 import getRandomInRange from '../../src/getRandomInRange.js';
 import engine from '../../src/index.js';
 
-function gcd(n, m) {
-  if (m > 0) {
-    const k = n % m;
-    return gcd(m, k);
-  } return Math.abs(n);
-}
-
 const gameDescription = 'Find the greatest common divisor of given numbers.';
-function roundGen() {
-  const firstNum = getRandomInRange();
-  const secondNum = getRandomInRange();
-  const roundGeneration = [];
-  roundGeneration.push(`${firstNum} ${secondNum}`);
-  roundGeneration.push(`${gcd(firstNum, secondNum)}`);
 
-  return roundGeneration;
+const correctAnswer = (num1, num2) => {
+  if (num2 > 0) {
+    const k = num1 % num2;
+    return gcd(num2, k);
+  } return Math.abs(num1);
 }
 
-engine(gameDescription, roundGen);
+const generateRound = () => {
+  const num1 = getRandomInRange();
+  const num2 = getRandomInRange();
+
+  const question = `${num1} ${num2}`;
+  const answer = `${correctAnswer(num1, num2)}`;
+  return [question, answer];
+};
+
+engine(gameDescription, generateRound);
