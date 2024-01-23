@@ -9,19 +9,17 @@ const engine = (gameDescription, roundGeneration) => {
   console.log(gameDescription);
 
   for (let i = 0; i < maxRound; i += 1) {
-    const [question, correct] = roundGeneration();
+    const [question, correctAnswer] = roundGeneration();
     const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
-    if (answer === correct) {
+    if (answer === correctAnswer) {
       console.log('Correct! ');
-      if (i === 2) {
-        console.log(`Congratulations, ${name}!`);
-      }
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct asnwer was '${correct}')`);
+      console.log(`'${answer}' is wrong answer ;(. Correct asnwer was '${correctAnswer}')`);
       console.log(`Let's try again, ${name}!`);
-      break;
+      return 0;
     }
   }
+  return console.log(`Congratulations, ${name}!`);
 };
 
 export default engine;
