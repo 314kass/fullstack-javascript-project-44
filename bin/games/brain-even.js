@@ -4,7 +4,12 @@ import engine from '../../src/index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const correctAnswer = (num) => num % 2 === 0 ? 'yes' : 'no';
+const correctAnswer = (num) => {
+  if (num % 2) {
+    return 'yes';
+  }
+  return 'no';
+};
 
 const generateRound = () => {
   const num = getRandomInRange();
