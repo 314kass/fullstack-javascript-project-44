@@ -7,9 +7,9 @@ const gameDescription = 'Find the greatest common divisor of given numbers.';
 const correctAnswer = (num1, num2) => {
   if (num2 > 0) {
     const k = num1 % num2;
-    return gcd(num2, k);
+    return correctAnswer(num2, k);
   } return Math.abs(num1);
-}
+};
 
 const generateRound = () => {
   const num1 = getRandomInRange();

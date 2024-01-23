@@ -2,21 +2,20 @@
 import getRandomInRange from '../../src/getRandomInRange.js';
 import engine from '../../src/index.js';
 
-const isPrime = (num) => {
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const correctAnswer = (num) => {
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) return 'no';
   }
   return 'yes';
 };
 
-const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-function roundGen() {
-  const randomNum = getRandomInRange(2, 100);
-  const roundGeneration = [];
-  roundGeneration.push(`${randomNum}`);
-  roundGeneration.push(`${isPrime(randomNum)}`);
+const generateRound = () => {
+  const num = getRandomInRange();
+  const question = `${num}`;
+  const answer = `${correctAnswer(num)}`;
+  return [question, answer];
+};
 
-  return roundGeneration;
-}
-
-engine(gameDescription, roundGen);
+engine(gameDescription, generateRound);
