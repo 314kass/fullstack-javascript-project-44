@@ -5,7 +5,7 @@ import engine from '../../src/index.js';
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const correctAnswer = (num) => {
-  if (num % 2) {
+  if (num % 2 === 0) {
     return 'yes';
   }
   return 'no';
