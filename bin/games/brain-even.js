@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import getRandomInRange from '../getRandomInRange.js';
-import engine from '../index.js';
+import getRandomInRange from '../../src/getRandomInRange.js';
+import engine from '../../src/index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
