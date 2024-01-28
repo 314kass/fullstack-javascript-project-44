@@ -3,15 +3,15 @@ install: #install dependences
 brain-games: #start brain-games
 		node bin/brain-games.js
 brain-calc: #start brain-calc
-		node bin/games/brain-calc.js
+		node bin/brain-calc.js
 brain-even: #start brain-even
-		node bin/games/brain-even.js
+		node bin/brain-even.js
 brain-gcd: #start brain-gcd
-		node bin/games/brain-gcd.js
+		node bin/brain-gcd.js
 brain-prime: #start brain-prime
-		node bin/games/brain-prime.js
+		node bin/brain-prime.js
 brain-progression: #start brain-progression
-		node bin/games/brain-progression.js
+		node bin/brain-progression.js
 publish: #publish
 		npm publish --dry-run
 lint: #linter check
