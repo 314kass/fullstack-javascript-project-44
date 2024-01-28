@@ -2,8 +2,6 @@
 import getRandomInRange from '../getRandomInRange.js';
 import engine from '../index.js';
 
-const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
-
 const isEven = (num) => num % 2 === 0;
 
 const generateRound = () => {
@@ -13,4 +11,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-export default () => { engine(gameDescription, generateRound); };
+export default (gameDescription) => { engine(gameDescription, generateRound); };

@@ -2,8 +2,6 @@
 import getRandomInRange from '../getRandomInRange.js';
 import engine from '../index.js';
 
-const gameDescription = 'What is the result of the expression?';
-
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
   return operators[getRandomInRange(0, operators.length - 1)];
@@ -32,4 +30,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-export default () => { engine(gameDescription, generateRound); };
+export default (gameDescription) => { engine(gameDescription, generateRound); };

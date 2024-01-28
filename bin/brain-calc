@@ -1,4 +1,5 @@
 #!/usr/bin/env node
 import game from '../src/games/brain-calc.js';
 
-game();
+const gameDescription = 'What is the result of the expression?';
+game(gameDescription);
