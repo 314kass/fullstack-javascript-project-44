@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import getRandomInRange from '../../src/getRandomInRange.js';
-import engine from '../../src/index.js';
+import getRandomInRange from '../getRandomInRange.js';
+import engine from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 
@@ -32,6 +32,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-engine(gameDescription, generateRound);
-
-export default engine;
+export default () => {engine(gameDescription, generateRound)}

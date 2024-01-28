@@ -16,7 +16,7 @@ const engine = (gameDescription, roundGeneration) => {
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct asnwer was '${correctAnswer}')`);
       console.log(`Let's try again, ${name}!`);
-      return 0;
+      return;
     }
   }
   return console.log(`Congratulations, ${name}!`);

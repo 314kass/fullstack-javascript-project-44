@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import getRandomInRange from '../../src/getRandomInRange.js';
-import engine from '../../src/index.js';
+import getRandomInRange from '../getRandomInRange.js';
+import engine from '../index.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
@@ -20,4 +20,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-engine(gameDescription, generateRound);
+export default () => {engine(gameDescription, generateRound)}
