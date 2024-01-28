@@ -19,7 +19,8 @@ const engine = (gameDescription, roundGeneration) => {
       return;
     }
   }
-  return console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
+  return;
 };
 
 export default engine;

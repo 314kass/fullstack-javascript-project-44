@@ -20,4 +20,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-export default () => {engine(gameDescription, generateRound)}
+export default () => { engine(gameDescription, generateRound); };

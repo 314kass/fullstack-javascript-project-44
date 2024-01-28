@@ -1,9 +1,7 @@
-
 import getRandomInRange from '../getRandomInRange.js';
 import engine from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
-
 const questGeneration = (progression) => {
   const whichNum = getRandomInRange(0, progression.length - 1);
   const quest = progression;
@@ -29,4 +27,4 @@ const generateRound = () => {
   return [quest, answer];
 };
 
-export default () => {engine(gameDescription, generateRound)}
+export default () => { engine(gameDescription, generateRound); };
