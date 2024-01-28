@@ -1,4 +1,0 @@
-#!/usr/bin/env node
-import game from '../src/games/brain-gcd.js';
-const gameDescription = 'Find the greatest common divisor of given numbers.';
-game(gameDescription);

@@ -2,6 +2,7 @@
 import getRandomInRange from '../getRandomInRange.js';
 import engine from '../index.js';
 
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 const correctAnswer = (num1, num2) => {
   if (num2 > 0) {
     const k = num1 % num2;
@@ -18,4 +19,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-export default (gameDescription) => { engine(gameDescription, generateRound); };
+export default () => { engine(gameDescription, generateRound); };
