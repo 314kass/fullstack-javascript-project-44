@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import getRandomInRange from '../getRandomInRange.js';
 import engine from '../index.js';
 
